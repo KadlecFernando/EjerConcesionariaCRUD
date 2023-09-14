@@ -51,6 +51,11 @@ public class Principal extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton2.setText("Salir");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton3.setText("Consulta, edicion y baja");
@@ -126,8 +131,12 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jlbAltaAutomovilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jlbAltaAutomovilActionPerformed
-        // TODO add your handling code here:
+        Alta.getIns();
     }//GEN-LAST:event_jlbAltaAutomovilActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.exit(WIDTH);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
    
 

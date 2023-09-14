@@ -33,8 +33,7 @@ public class AutomovilData {
             ResultSet rs=ps.getGeneratedKeys();
             if(rs.next()){
                 automovil.setIdAutomovil(1);
-                 JOptionPane.showMessageDialog(null,"Automovil agregado con exito");
-                 System.out.println(automovil.toString());
+                 JOptionPane.showMessageDialog(null,"Automovil agregado con exito");                 
             }
             
             ps.close();
@@ -44,6 +43,8 @@ public class AutomovilData {
         }
         
     }
+    
+    
     
     
     
