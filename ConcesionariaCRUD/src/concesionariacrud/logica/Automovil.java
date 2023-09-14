@@ -25,6 +25,17 @@ public class Automovil {
         this.cantPuertas = cantPuertas;
     }
 
+    public Automovil(String modelo, String marca, String motor, String color, String patente, int cantPuertas) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.motor = motor;
+        this.color = color;
+        this.patente = patente;
+        this.cantPuertas = cantPuertas;
+    }
+    
+    
+
     public int getIdAutomovil() {
         return idAutomovil;
     }
@@ -79,6 +90,11 @@ public class Automovil {
 
     public void setCantPuertas(int cantPuertas) {
         this.cantPuertas = cantPuertas;
+    }
+
+    @Override
+    public String toString() {
+        return "Automovil{" + "idAutomovil=" + idAutomovil + ", modelo=" + modelo + ", marca=" + marca + ", motor=" + motor + ", color=" + color + ", patente=" + patente + ", cantPuertas=" + cantPuertas + '}';
     }
     
     
